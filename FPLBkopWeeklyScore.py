@@ -88,7 +88,7 @@ with open('TeamsWithIdsTable.csv') as teamFile:
     teams = teamFile.readlines()
 
 weekly_filename = "Weekly\Gameweek_"+str(gw)+"_Teams_Leaderboard.csv"
-overall_filename = "Overall\Overall_Teams_Leaderboard_after_gw"+str(gw)+".csv"
+overall_filename = "Overall\Gameweek_"+str(gw)+"_Overall_Teams_Leaderboard"+str(gw)+".csv"
 
 output_file_weekly = open(weekly_filename, "w")
 output_file_overall = open(overall_filename, "w")
